@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="body">
-    <div class="body__wrapper">
-      <div class="matrix">
+    <main class="body__wrapper">
+      <!-- Tag H1 added for semantics. It's hidden -->
+      <h1 class="h1-hidden">TODO Application</h1>
+      <article class="matrix">
         <img class="matrix__img" src="./eisenhower-matrix.jpg">
         <a class="matrix__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-      </div>
-      <div class="centered-main-page-element">
+      </article>
+      <article class="centered-main-page-element">
         <p id="topSectionForAddingElementToList">
           <label for="new-task">Add Item</label>
           <div class="task-row-wrapper">
@@ -20,7 +22,7 @@
             <button>Add</button>
           </div>
         </p>
-        <h3>Todo</h3>
+        <h2>Todo</h2>
         <ul id="incompleteTasks">
           <li>
             <input type="checkbox">
@@ -41,7 +43,7 @@
             </button>
           </li>
         </ul>
-        <h3>Completed</h3>
+        <h2>Completed</h2>
         <ul id="completed-tasks">
           <li>
             <input type="checkbox" checked>
@@ -53,9 +55,8 @@
             </button>
           </li>
         </ul>
-      </div>
-    </div>
-
+      </article>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

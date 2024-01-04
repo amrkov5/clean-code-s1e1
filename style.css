@@ -8,13 +8,16 @@
   margin: 0 auto;
   width: 500px;
 }
+.h1-hidden {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+}
 .matrix {
   text-align: right;
 }
 .matrix__img {
   width: 100%;
-  /* width: 500px; */
-
 }
 .matrix__info {
   font-family: fantasy, cursive;
