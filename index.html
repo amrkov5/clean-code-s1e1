@@ -11,50 +11,56 @@
       <!-- Tag H1 added for semantics. It's hidden -->
       <h1 class="h1-hidden">TODO Application</h1>
       <article class="matrix">
-        <img class="matrix__img" src="./eisenhower-matrix.jpg">
+        <img class="matrix__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix-picture">
         <a class="matrix__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </article>
       <article class="centered-main-page-element">
-        <p id="topSectionForAddingElementToList">
-          <label for="new-task">Add Item</label>
-          <div class="task-row-wrapper">
-            <input id="new-task" class="task" type="text">
-            <button>Add</button>
-          </div>
-        </p>
-        <h2>Todo</h2>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg">
-            </button>
-          </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg">
-            </button>
-          </li>
-        </ul>
-        <h2>Completed</h2>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg">
-            </button>
-          </li>
-        </ul>
+        <section class="section">
+          <p id="topSectionForAddingElementToList">
+            <label for="new-task">Add Item</label>
+            <div class="task-row-wrapper">
+              <input id="new-task" class="task" type="text">
+              <button>Add</button>
+            </div>
+          </p>
+        </section>
+        <section class="section">
+          <h2>Todo</h2>
+          <ul id="incompleteTasks">
+            <li>
+              <input type="checkbox">
+              <label class="task">Pay Bills</label>
+              <input type="text" class="task">
+              <button class="edit">Edit</button>
+              <button class="delete">
+                <img alt="" src="./remove.svg">
+              </button>
+            </li>
+            <li class="editMode">
+              <input type="checkbox">
+              <label class="task">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task">
+              <button class="edit">Save</button>
+              <button class="delete">
+                <img alt="" src="./remove.svg">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2>Completed</h2>
+          <ul id="completed-tasks">
+            <li>
+              <input type="checkbox" checked>
+              <label class="task">See the Doctor</label>
+              <input type="text" class="task">
+              <button class="edit">Edit</button>
+              <button class="delete">
+                <img alt="" src="./remove.svg">
+              </button>
+            </li>
+          </ul>
+        </section>
       </article>
     </main>
     <script src="app.js"></script>
