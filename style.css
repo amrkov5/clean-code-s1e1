@@ -13,6 +13,8 @@
   height: 0;
   margin: 0;
 }
+
+/* Matrix block */
 .matrix {
   text-align: right;
 }
@@ -27,6 +29,8 @@
     text-align: center;
   }
 }
+
+/* Heading */
 .section-heading {
   color: #333;
   font-weight: 700;
@@ -38,6 +42,8 @@
   padding: 30px 0 10px;
   margin: 0;
 }
+
+/* New task block */
 .section__row-wrap {
   display: flex;
   margin: 20px 0 16px 0;
@@ -45,6 +51,12 @@
 .new-task {
   display: flex;
   flex-grow: 1;
+}
+
+/* Main app section */
+.section__task-list {
+  margin: 0;
+  padding: 0px;
 }
 .new-task__input,
 .list-el__input {
@@ -59,10 +71,6 @@
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
-}
-.section__task-list {
-  margin: 0;
-  padding: 0px;
 }
 .list-el {
   list-style: none;
@@ -108,29 +116,20 @@
 }
 .list-el__del-img {
   height: 2em;
-  transform: rotateZ(45deg);
   transition: transform 0.2s ease-in;
+}
+.list-el__del-img_rotated {
+  transform: rotateZ(45deg);
 }
 .section__add-btn:hover,
 .list-el__del-btn:hover,
 .list-el__save-btn:hover {
   color: #3a3A3a;
 }
-
-/* Heading */
-
-
-/* New Task */
-
-/* Task list */
 .list-el__del-img:hover {
   transform: rotateZ(0);
 }
-
-/* Completed */
 .list-el_lined-through {
   text-decoration: line-through;
   color: #888;
 }
-
-/* Edit Task */
