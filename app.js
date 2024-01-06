@@ -38,10 +38,10 @@ const createNewTaskElement = function(taskString){
   editInput.className = "list-el__input list-el__input_hidden";
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "list-el__save-btn";
-  deleteButton.className="list-el__del-btn list-el__del-btn_rotated";
+  deleteButton.className="list-el__del-btn";
   deleteButtonImg.setAttribute('alt', '');
   deleteButtonImg.src='./remove.svg';
-  deleteButtonImg.classList = 'list-el__del-img';
+  deleteButtonImg.classList = 'list-el__del-img list-el__del-img_rotated';
   deleteButton.appendChild(deleteButtonImg);
   //and appending.
   listItem.appendChild(checkBox);
