@@ -39,7 +39,7 @@ const createNewTaskElement = function(taskString){
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "list-el__save-btn";
   deleteButton.className="list-el__del-btn list-el__del-btn_rotated";
-  deleteButtonImg.setAttribute('alt', 'X');
+  deleteButtonImg.setAttribute('alt', '');
   deleteButtonImg.src='./remove.svg';
   deleteButtonImg.classList = 'list-el__del-img';
   deleteButton.appendChild(deleteButtonImg);
